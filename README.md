@@ -92,6 +92,35 @@ UI:
 - A "Login" button which triggers the login process.
 - A link directs users to the registration page if they need an account.
 
+## Register Component
+
+The Register component provides a user registration interface for the "Chatbox" application. It features a form where users can input their name, email, and password to create a new account.
+
+Dependencies:
+
+- React
+- react-hot-toast: Used for displaying success or error toasts.
+- react-redux: Allows the component to dispatch actions to the Redux store.
+- react-router-dom: Provides routing capabilities.
+
+State:
+The component uses React's useState hook to maintain the state of the user:
+
+```
+const [user, setUser] = React.useState({
+  name: "",
+  email: "",
+  password: "",
+});
+```
+
+Functions and Methods:
+register():
+- An asynchronous function responsible for user registration. It dispatches the ShowLoader action to indicate the start of the registration process. It then calls the RegisterUser API with the user's details and, depending on the response, either shows a success or an error toast. After the registration attempt, it dispatches the HideLoader action.
+
+useEffect():
+- The useEffect hook checks if there's a token stored in localStorage, indicating an already authenticated user. If found, the user is redirected to the root path.
+
 ## Team
 
 - Erik Williams

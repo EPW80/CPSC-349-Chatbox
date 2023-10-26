@@ -116,9 +116,11 @@ const [user, setUser] = React.useState({
 
 Functions and Methods:
 register():
+
 - An asynchronous function responsible for user registration. It dispatches the ShowLoader action to indicate the start of the registration process. It then calls the RegisterUser API with the user's details and, depending on the response, either shows a success or an error toast. After the registration attempt, it dispatches the HideLoader action.
 
 useEffect():
+
 - The useEffect hook checks if there's a token stored in localStorage, indicating an already authenticated user. If found, the user is redirected to the root path.
 
 ## Team

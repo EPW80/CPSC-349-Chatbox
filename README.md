@@ -80,6 +80,10 @@ Functions:
       dispatch(HideLoader()); // Hide the loader
       if (response.success) {
         toast.success(response.message); // Show success notification
+
+      }
+    }
+  }
 ```
 
 UI:
@@ -87,3 +91,10 @@ UI:
 - A centered login form with input fields for email and password.
 - A "Login" button which triggers the login process.
 - A link directs users to the registration page if they need an account.
+
+## Team
+
+- Erik Williams
+- Zakariye Samatar
+- Ahyeon Jang
+- Ethan Wu

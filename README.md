@@ -1,0 +1,26 @@
+# CPSC-349-Group Project "Chatbox"
+
+MERN real-time chat app using Socket.io
+
+## Socket.io:
+
+A popular JavaScript library that enables real-time, bidirectional, and event-based communication between a browser (or any other client) and a server. It abstracts the complexities of establishing a real-time web connection, providing a simplified API that works consistently across different devices and browsers.
+
+## Features:
+
+- one-to-one conversation feature.
+- Real-time messaging with socket rooms.
+- Fetching user's online status and activity in real-time.
+- Real-time notifications for messages.
+- Show a typing animation on the receiver's side during active typing by the sender.
+- Store all messages and chat data in MongoDB.
+- Politicians can exchange tips about avoiding their constituents
+
+## Understanding MERN
+
+MERN stands for MongoDB, Express, React, and Node - symbolizing the core technologies involved:
+
+- MongoDB: powerful document database.
+- Express(.js): server-side framework based on Node.js.
+- React(.js): front-end JavaScript library dedicated to building UI components.
+- Node(.js): JavaScript runtime environment suitable for building scalable network applications.

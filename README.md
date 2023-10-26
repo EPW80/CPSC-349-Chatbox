@@ -37,7 +37,7 @@ install dependencies in root directory
 npm install
 ```
 
-then start server with
+start server
 
 ```
 node server/server.js
@@ -49,7 +49,7 @@ cd into client folder and install dependencies
 npm install
 ```
 
-start server
+start front end
 
 ```
 npm start

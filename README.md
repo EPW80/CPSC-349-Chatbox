@@ -71,7 +71,18 @@ Functions:
 
 - login: Handles the login process. Shows a loading spinner, makes an API call to login the user, and then hides the spinner. Depending on the API response, the user either gets logged in or receives an error toast.
 
-  UI:
+```
+ // Function to handle user login
+  const login = async () => {
+    try {
+      dispatch(ShowLoader()); // Show the loader
+      const response = await LoginUser(user); // API call to login the user
+      dispatch(HideLoader()); // Hide the loader
+      if (response.success) {
+        toast.success(response.message); // Show success notification
+```
+
+UI:
 
 - A centered login form with input fields for email and password.
 - A "Login" button which triggers the login process.

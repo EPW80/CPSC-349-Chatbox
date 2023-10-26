@@ -24,3 +24,23 @@ MERN stands for MongoDB, Express, React, and Node - symbolizing the core technol
 - Express(.js): server-side framework based on Node.js.
 - React(.js): front-end JavaScript library dedicated to building UI components.
 - Node(.js): JavaScript runtime environment suitable for building scalable network applications.
+
+## Login Component
+
+### Overview
+
+### Allows users to login into the Chatbox application.
+
+State:
+- user: Object storing the email and password input by the user.
+
+Lifecycle:
+- On component mount, if the user token is found in local storage (indicating the user is already logged in), the user is redirected to the homepage.
+
+Functions:
+- login: Handles the login process. Shows a loading spinner, makes an API call to login the user, and then hides the spinner. Depending on the API response, the user either gets logged in or receives an error toast.
+
+  UI:
+- A centered login form with input fields for email and password.
+- A "Login" button which triggers the login process.
+- A link directs users to the registration page if they need an account.

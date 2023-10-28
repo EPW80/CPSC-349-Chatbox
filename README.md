@@ -197,7 +197,7 @@ io.on("connection", (socket) => {
   });
 ```
 
-## Team
+## Contributors:
 
 - Erik Williams
 - Zakariye Samatar

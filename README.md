@@ -57,7 +57,8 @@ npm start
 
 ## Project Structure
 
-![](./client/public/images/structure.jpg)
+<img src="./client/public/images/structure.jpg" alt="Structure Image" height="600px" />
+
 
 ## Login Component
 

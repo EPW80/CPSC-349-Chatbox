@@ -1,6 +1,6 @@
 # CPSC-349-Group Project "Chatbox"
 
-MERN real-time chat app using Socket.io
+MERN real-time chat app using Socket.io. Once launched, users are prompted to create and register an account by supplying an email account, password, and username. If an existing account exists, the user can log in with their existing credentials. Once logged in, the users can create new chat windows by searching for other users in the search bar. Alternatively, if a current chat window exists, the user can select it and view the chat history. In the top right of the application, the user can view their account information and their account's creation date. On the profile page, the user can customize their profile by supplying an image or log out of the application.
 
 ## Socket.io:
 
@@ -54,6 +54,10 @@ start front end
 ```
 npm start
 ```
+
+## Project Structure
+
+![](./client/public/images/structure.jpg)
 
 ## Login Component
 
@@ -122,6 +126,33 @@ register():
 useEffect():
 
 - The useEffect hook checks if there's a token stored in localStorage, indicating an already authenticated user. If found, the user is redirected to the root path.
+
+## Socket rooms:
+
+```
+
+// Initializing an array to keep track of users who are currently online
+let onlineUsers = [];
+
+// Set up an event listener for when a new client connects to the socket server
+io.on("connection", (socket) => {
+
+  // Event to handle when a user wants to join a specific room (a chat room in this context)
+  socket.on("join-room", (userId) => {
+    // The user's socket joins the specified room (designated by the userId)
+    socket.join(userId);
+  });
+
+  // Event to handle when a user sends a message to specific members
+  socket.on("send-message", (message) => {
+    // Emit the received message to the specified members in the message
+    // This assumes that the message object contains a 'members' array
+    // with at least two user identifiers (IDs or names)
+    io.to(message.members[0])
+      .to(message.members[1])
+      .emit("receive-message", message);
+  });
+```
 
 ## Team
 

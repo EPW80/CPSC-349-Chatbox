@@ -59,6 +59,40 @@ npm start
 
 <img src="./client/public/images/structure.jpg" alt="Structure Image" height="600px" />
 
+# Front-end Configuration
+
+This configuration file is for setting up and customizing the behavior of the TailwindCSS utility-first CSS framework in your project.
+
+```
+content: ["./src/**/*.{js,jsx,ts,tsx}"],
+```
+content: An array of file paths or globs where your classes are being used. TailwindCSS uses this information for tree-shaking unused styles in production builds. In this configuration, it's scanning JavaScript and TypeScript files (both regular and JSX/TSX variants) inside the src directory.
+
+```
+theme: {
+    extend: {
+        colors: {
+            primary: "#000000",
+        },
+    },
+},
+
+```
+- theme: Allows you to define the default configuration for your project.
+
+- extend: Rather than overwrite the default configurations, you can use the extend key to extend the default configuration. This is particularly useful if you want to add new variants or customize the default values without losing them.
+
+- colors: Here, you're adding or overwriting color options. In this configuration, the color primary is set to the hexadecimal value #000000 (which is black).
+
+## UI:
+
+- A centered login form with input fields for email and password.
+
+- A "Login" button which triggers the login process.
+
+- A link directs users to the registration page if they need an account.
+
+# Backend configuration
 
 ## Login Component
 
@@ -91,12 +125,6 @@ Functions:
   }
 ```
 
-UI:
-
-- A centered login form with input fields for email and password.
-- A "Login" button which triggers the login process.
-- A link directs users to the registration page if they need an account.
-
 ## Register Component
 
 The Register component provides a user registration interface for the "Chatbox" application. It features a form where users can input their name, email, and password to create a new account.
@@ -109,6 +137,7 @@ Dependencies:
 - react-router-dom: Provides routing capabilities.
 
 State:
+
 The component uses React's useState hook to maintain the state of the user:
 
 ```
@@ -120,6 +149,7 @@ const [user, setUser] = React.useState({
 ```
 
 Functions and Methods:
+
 register():
 
 - An asynchronous function responsible for user registration. It dispatches the ShowLoader action to indicate the start of the registration process. It then calls the RegisterUser API with the user's details and, depending on the response, either shows a success or an error toast. After the registration attempt, it dispatches the HideLoader action.
@@ -131,7 +161,6 @@ useEffect():
 ## Socket rooms:
 
 ```
-
 // Initializing an array to keep track of users who are currently online
 let onlineUsers = [];
 

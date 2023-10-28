@@ -103,7 +103,7 @@ theme: {
 
 ## Demo
 
-![](./client/public/images/demo.gif)
+<img src="./client/public/images/demo.gif" alt="Demo" height="400">
 
 # Backend configuration
 

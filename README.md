@@ -92,6 +92,10 @@ theme: {
 
 - A link directs users to the registration page if they need an account.
 
+## Demo
+
+![](./client/public/images/demo.gif)
+
 # Backend configuration
 
 ## Login Component

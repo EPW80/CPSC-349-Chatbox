@@ -55,6 +55,15 @@ start front end
 npm start
 ```
 
+* a .env file is required for this project *
+```
+MONGO_URL=
+JWT_SECRET=
+CLOUD_NAME=
+CLOUD_API_KEY=
+CLOUD_API_SECRET=
+```
+
 ## Project Structure
 
 <img src="./client/public/images/structure.jpg" alt="Structure Image" height="600px" />

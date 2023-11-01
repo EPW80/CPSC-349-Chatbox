@@ -25,6 +25,22 @@ MERN stands for MongoDB, Express, React, and Node - symbolizing the core technol
 - React(.js): front-end JavaScript library dedicated to building UI components.
 - Node(.js): JavaScript runtime environment suitable for building scalable network applications.
 
+## Mongo connection
+
+```
+// Once the promise is resolved, execute the following:
+.then(() => {
+    // Log a success message to the console if the connection to MongoDB is successful.
+    console.log("Mongo DB Connection Successful");
+})
+// If there's an error while connecting, execute the following:
+.catch(err => {
+    // Log an error message to the console with the reason for the failed MongoDB connection.
+    console.log("Mongo DB Connection Failed:", err.message);
+});
+
+```
+
 ## Installation
 
 clone into project
@@ -55,7 +71,8 @@ start front end
 npm start
 ```
 
-* a .env file is required for this project *
+- a .env file is required for this project \*
+
 ```
 MONGO_URL=
 JWT_SECRET=
@@ -70,11 +87,12 @@ CLOUD_API_SECRET=
 
 # Front-end Configuration
 
-This configuration file is for setting up and customizing the behavior of the TailwindCSS utility-first CSS framework in your project.
+This configuration file is for setting up and customizing the behavior of the TailwindCSS! utility-first CSS framework in your project.
 
 ```
 content: ["./src/**/*.{js,jsx,ts,tsx}"],
 ```
+
 content: An array of file paths or globs where your classes are being used. TailwindCSS uses this information for tree-shaking unused styles in production builds. In this configuration, it's scanning JavaScript and TypeScript files (both regular and JSX/TSX variants) inside the src directory.
 
 ```
@@ -87,6 +105,7 @@ theme: {
 },
 
 ```
+
 - theme: Allows you to define the default configuration for your project.
 
 - extend: Rather than overwrite the default configurations, you can use the extend key to extend the default configuration. This is particularly useful if you want to add new variants or customize the default values without losing them.
@@ -203,5 +222,5 @@ io.on("connection", (socket) => {
 
 - Erik Williams
 - Zakariye Samatar
-- Ahyeon Jang
+- Ahyeon Jung
 - Ethan Wu

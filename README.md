@@ -87,7 +87,8 @@ CLOUD_API_SECRET=
 
 # Front-end Configuration
 
-This configuration file is for setting up and customizing the behavior of the TailwindCSS! utility-first CSS framework in your project.
+This configuration file is for setting up and customizing the behavior of the [TailwindCSS!](https://tailwindcss.com/)
+utility-first CSS framework in your project.
 
 ```
 content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -217,6 +218,10 @@ io.on("connection", (socket) => {
       .emit("receive-message", message);
   });
 ```
+
+## Deployment
+
+[Render](https://render.com/)
 
 ## Contributors:
 

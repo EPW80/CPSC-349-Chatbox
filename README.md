@@ -83,6 +83,8 @@ CLOUD_API_SECRET=
 
 ## Project Structure
 
+just in case you delete or misplace a folder
+
 <img src="./client/public/images/structure.jpg" alt="Structure Image" height="600px" />
 
 # Front-end Configuration

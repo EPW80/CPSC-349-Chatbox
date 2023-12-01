@@ -81,12 +81,6 @@ CLOUD_API_KEY=
 CLOUD_API_SECRET=
 ```
 
-## Project Structure
-
-just in case you delete or misplace a folder
-
-<img src="./client/public/images/structure.jpg" alt="Structure Image" height="600px" />
-
 # Front-end Configuration
 
 This configuration file is for setting up and customizing the behavior of the [TailwindCSS!](https://tailwindcss.com/)
@@ -127,7 +121,6 @@ theme: {
 
 <img src="./client/public/images/demo.gif" alt="Demo" height="400">
 
-[Youtube](https://www.youtube.com/watch?v=qgxdiRy1Dqg)
 
 # Backend configuration
 
@@ -225,9 +218,7 @@ io.on("connection", (socket) => {
 
 [Render](https://render.com/)
 
-## Contributors:
+## Contributor:
 
 - Erik Williams
-- Zakariye Samatar
-- Ahyeon Jung
-- Ethan Wu
+
